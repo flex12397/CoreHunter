@@ -2,21 +2,41 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>My Slides</title>
+    <title>Debugging Slides</title>
+    <style>
+      .error { color: red; }
+    </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.min.css">
   </head>
   <body>
+    <div id="status" class="error">Loading...</div>
     <div class="reveal">
       <div class="slides" data-markdown="slides.md"></div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.min.js"></script>
     <script>
-      Reveal.initialize({ 
-        plugins: [RevealMarkdown],
-        hash: true
-      });
+      document.getElementById('status').textContent = 'Initializing...';
+      
+      if (!window.Reveal) {
+        document.getElementById('status').textContent = 'ERROR: Reveal.js failed to load!';
+      } else if (!window.RevealMarkdown) {
+        document.getElementById('status').textContent = 'ERROR: Markdown plugin missing!';
+      } else {
+        Reveal.initialize({
+          plugins: [RevealMarkdown],
+          hash: true
+        }).then(() => {
+          document.getElementById('status').textContent = 'Slides loaded successfully!';
+          setTimeout(() => {
+            document.getElementById('status').style.display = 'none';
+          }, 2000);
+        }).catch(e => {
+          document.getElementById('status').textContent = `ERROR: ${e.message}`;
+        });
+      }
     </script>
   </body>
 </html>
