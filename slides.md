@@ -1,10 +1,13 @@
 # Core Hunter
 
+<div style="position: absolute; bottom: 20px; right: 20px; font-size: 0.6em;">
+Felix Li · <felix.li12397@gmail.com>  
+</div>
 ---
 
 ## Core Hunter是什么？
 
-- 用于核心种质筛选的生物信息学工具  
+- 用于核心f种质筛选的生物信息学工具  
 - 从大规模遗传资源库中选取子集  
 - 本报告主要讲解Core Hunter3各个算法，然后跟其他核心种质筛选工具做对比
 
