@@ -19,20 +19,34 @@
         .reveal .slides section {
             min-height: 100%;
         }
-
         .presenter-footer {
             position: fixed;
             bottom: 20px;
-            left: 0;
-            right: 0;
+            left: 50%;
+            transform: translateX(-50%);
             text-align: center;
             font-size: 14px;
             color: #666;
             z-index: 100;
             font-family: Arial, sans-serif;
+            white-space: nowrap;
+            background: rgba(255,255,255,0.8);
+            padding: 0 15px;
+            border-radius: 20px;
+            max-width: 90vw;
+            box-sizing: border-box;
         }
     </style>
 </head>
+<script>
+    // Add footer dynamically after Reveal.js loads
+    Reveal.ready(() => {
+        const footer = document.createElement('div');
+        footer.className = 'presenter-footer';
+        footer.innerHTML = 'Felix Li • <a href="mailto:felix.li12397@gmail.com">felix.li12397@gmail.com</a>';
+        document.body.appendChild(footer);
+    });
+</script>
 <body>
     <div class="reveal">
         <div class="slides">
