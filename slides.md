@@ -1,7 +1,7 @@
 # Core Hunter
 
-<div style="position: absolute; bottom: 20px; right: 20px; font-size: 0.6em;">
-Felix Li · <felix.li12397@gmail.com>  
+<div style="position: absolute; bottom: 40px; left: 0; right: 0; text-align: center; font-size: 0.5em; color: #666;">
+Felix Li • <a href="mailto:felix.li12397@gmail.com">felix.li12397@gmail.com</a>
 </div>
 ---
 
