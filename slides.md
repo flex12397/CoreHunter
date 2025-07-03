@@ -1,5 +1,4 @@
-# Core Hunter
-## Genetic Core Collection Optimization Tool
+# Core Hunter Hello
 
 ---
 
