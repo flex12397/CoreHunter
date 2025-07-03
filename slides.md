@@ -1,8 +1,5 @@
 # Core Hunter
 
-<div class="presenter-footer">
-Felix Li • <a href="mailto:felix.li12397@gmail.com">felix.li12397@gmail.com</a>
-</div>
 ---
 
 ## Core Hunter是什么？
