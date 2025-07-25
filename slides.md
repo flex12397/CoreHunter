@@ -68,7 +68,7 @@ Felix Li • <a href="mailto:felix.li12397@gmail.com">felix.li12397@gmail.com</a
 
 ---
 
-###假设当前解子集为 {A, B, C}
+### 假设当前解子集为 {A, B, C}
 1. 随机替换一个成员 -> 新解 {A, B, D}（ANE=0.82）
 2. 0.82 < 0.85 -> 保留新解
 3. 替换 {A, B, E}（ANE=0.83）-> 拒绝
@@ -88,7 +88,7 @@ Felix Li • <a href="mailto:felix.li12397@gmail.com">felix.li12397@gmail.com</a
 
 ---
 
-###假设从玉米数据中选择核心种质（ANE=0.8168）
+### 假设从玉米数据中选择核心种质（ANE=0.8168）
 - 高温链：可能接受ANE=0.83的解（暂时变差）
 - 低温链：严格接受ANE<0.8168的解
 - 交换：如果高温链找到更优区域，低温链跳过去搜索
@@ -255,7 +255,7 @@ Felix Li • <a href="mailto:felix.li12397@gmail.com">felix.li12397@gmail.com</a
 
 ---
 
-##玉米数据
+## 玉米数据
 - 1250份种质资源，通过1117个SNP标记表征
 - 来自R包synbreedData
 
@@ -286,7 +286,7 @@ Felix Li • <a href="mailto:felix.li12397@gmail.com">felix.li12397@gmail.com</a
 
 ---
 
-##同样A-NE，不同种质?
+## 同样A-NE，不同种质?
 - Run 1
   - 即使已找到最优解的A-NE，CH3会继续探索解空间
   - 高温链接受较差解，但是能扩大搜索范围
