@@ -68,7 +68,7 @@ Felix Li • <a href="mailto:felix.li12397@gmail.com">felix.li12397@gmail.com</a
 
 ---
 
-### 假设当前解子集为 {A, B, C}
+### 假设当前解子集为 {A, B, C} （ANE = 0.85)
 1. 随机替换一个成员 -> 新解 {A, B, D}（ANE=0.82）
 2. 0.82 < 0.85 -> 保留新解
 3. 替换 {A, B, E}（ANE=0.83）-> 拒绝
